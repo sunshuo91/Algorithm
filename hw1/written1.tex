@@ -1,0 +1,35 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{Assignment1 \LaTeX{} Tutorial}
+
+\author{Steve Sun}
+
+\date{September 5th}
+
+\begin{document}
+\maketitle
+
+\section{}
+
+\begin{align*}
+\frac{n!}{r!(n - r)!} &= \frac{(n - 1)!}{r!(n - 1 - r)!} + \frac{(n - 1)!}{(r - 1)!((n - 1) - (r - 1))!} \\
+&= \frac{(n - 1)!}{r!(n - 1 - r)!} + \frac{(n - 1)!}{(r - 1)!(n - r)!} \\
+&= ... \\
+&= \frac{(n - r + r)(n - 1)!}{r(r - 1)!(n - r)(n - r - 1)!} \\
+&= \frac{(n)(n - 1)!}{r(r - 1)!(n - r)(n - r - 1)!} \\
+&= \frac{n!}{r!(n - r)!} \\
+\end{align*}
+
+\section{}
+\begin{align*}
+\varphi = \exists_x :\forall_y &: y \in x \\
+\forall_x(x  \neq \emptyset \rightarrow\exists_y & \in x(y \cap x = \emptyset)) \\
+\exists_x(x \neq \emptyset \rightarrow\forall_y & \in x(y \cap x \neq \emptyset)) \\
+\exists_y \in x(y &\cap x \neq \emptyset) \\
+\{y \cap x = \emptyset, y &\cap x \neq \emptyset\} \vdash \phi \\
+\end{align*}
+
+\end{document}
